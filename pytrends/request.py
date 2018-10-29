@@ -51,7 +51,7 @@ class TrendReq(object):
         #proxies format: {"http": "http://192.168.0.1:8888" , "https": "https://192.168.0.1:8888"}
         self.cookies = dict(filter(
             lambda i: i[0] == 'NID',
-            requests.get('https://trends.google.com').cookies.items()
+            requests.get('https://trends.google.com',verify=False).cookies.items()
         ))
 
         # intialize widget payloads

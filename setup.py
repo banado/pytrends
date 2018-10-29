@@ -29,5 +29,5 @@ setup(
         ],
     install_requires=["requests", "pandas", 'lxml'],
     keywords='google trends api search',
-    packages=['dongsub'],
+    packages=['pytrends'],
 )
